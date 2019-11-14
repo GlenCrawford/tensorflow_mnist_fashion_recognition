@@ -28,7 +28,9 @@ See dependencies.txt for packages and versions (and below to install).
 Each image input is a 2D array, representing a 28 by 28 pixel image, with each value being a decimal from 0 to 1 (shrunk down from greyscale 0 to 255 values).
 
 __Input layer:__ 784 neurons (28 * 28), one for each pixel.
+
 __One hidden layer:__ 128 neurons.
+
 __Output layer:__ 10 neurons, one for each of the 10 labels/classes, with as integers from 0 to 9. The total of all of the values of this layer's neurons will equal 1. The network's prediction is the neuron with the highest value.
 
 ## Setup
