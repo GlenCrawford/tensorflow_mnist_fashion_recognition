@@ -1,6 +1,3 @@
-print(str(28 * 28))
-raise
-
 import tensorflow as tf
 from tensorflow import keras
 import numpy as np
@@ -15,8 +12,8 @@ data = keras.datasets.fashion_mnist
 # Split the dataset up into sub datasets, for training and testing.
 # The images are a 2D array/matrix representing a 28 x 28 pixel image. Each value is a greyscale value from 0 to 255.
 (train_images, train_labels), (test_images, test_labels) = data.load_data()
-
-#print(len(test_images))
+# print('Number of training images: ' + str(len(train_images)))
+# print('Number of testing images: ' + str(len(test_images)))
 
 # Each image has a label from 10 possible label values: digits between 0 and 9. Create a mapping to be more human-friendly.
 class_names = [
@@ -32,10 +29,10 @@ class_names = [
   'Ankle boot'
 ]
 
-# View raw image data as a 28 x 28 matrix of pixels:
+# Uncomment to view raw image data as a 28 x 28 matrix of pixels:
 # print(train_images[0])
 
-# View the actual image:
+# Uncomment to view an actual image:
 # plt.imshow(train_images[0], cmap=plt.cm.binary)
 # plt.show()
 
